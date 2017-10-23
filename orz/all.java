@@ -1,4 +1,4 @@
-package orz;
+﻿package orz;
 import java.io.*;
 import javax.swing.*;
 import java.awt.*;
@@ -191,24 +191,5 @@ public class all extends Component {
         m.find();
         return m.group();
     }
-    /*
-    private void dotconfig() throws IOException {
-        String path = System.getProperty("user.dir");
-        File file = new File(path+"/config");
-        if (file.exists()){
-            InputStream inputStream = new FileInputStream(file); String string;
-            try (Scanner scanner = new Scanner(inputStream, "UTF-8")) {
-                string = scanner.useDelimiter("\\A").next();
-            }
-            String patt = "[DotPath=*]";
-            Pattern r = Pattern.compile(patt);
-            Matcher m = r.matcher(string);
-            if (m.find())   ;//hjgjkyhkgkhjgggggggggggggggggggggggggggggggggggggggggggggggggggyutugugjggyugkjhgtuy
-            else ;
-        }
-        else{
-            file.createNewFile();
-            String con = getpath("打开dot.exe所在位置");
-        }
-    }*/
+    
 }
